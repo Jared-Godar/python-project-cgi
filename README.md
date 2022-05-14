@@ -53,27 +53,27 @@ This will import the Databricks archive notebook needed for this exercise into y
 
 ## Data Dictionary
 
-| Feature                | Datatype       | Definition                              |
-| :--------------------- | :------------- | :-------------------------------------- |
-| Ticket_number          | object         | Ticket number                           |
-| Issue_Date             | datetime64[ns] | MM/dd/yyyy                              |
-| Issue_time             | *float64*      | 24-hour time  hhmm.0                    |
-| Meter_Id               | object         |                                         |
-| Marked_Time            | float64        |                                         |
-| RP_State_Plate         | object         | Plate state abbreviation                |
-| Plate_Expiry_Date      | *float64*      | yyyymm.0                                |
-| VIN                    | object         | Vehicle Identification Number           |
-| Make                   | object         | Car make abbreviation                   |
-| Body_Style             | object         | Body style abbreviation                 |
-| Agency                 | float64        | Integer - PDF with corresponding agency |
-| Violation_code         | object         |                                         |
-| Violation_Description  | object         |                                         |
-| Fine_amount            | float64        |                                         |
-| Latitude               | float64        |                                         |
-| Longitude              | float64        |                                         |
-| Agency_Description     | float64        |                                         |
-| Color_Description      | float64        |                                         |
-| Body_Style_Description | float64        |                                         |
+| Feature                | Datatype       | Definition                              | Description                      |
+| :--------------------- | :------------- | :-------------------------------------- | :------------------------------- |
+| Ticket_number          | object         | Ticket number                           | Original - converted to string   |
+| Issue_Date             | datetime64[ns] | MM/dd/yyyy                              | Original - converted to datetime |
+| Issue_time             | *float64*      | 24-hour time  hhmm.0                    | Original                         |
+| Meter_Id               | object         |                                         | Original                         |
+| Marked_Time            | float64        |                                         | Original                         |
+| RP_State_Plate         | object         | Plate state abbreviation                | Original                         |
+| Plate_Expiry_Date      | *float64*      | yyyymm.0                                | Original                         |
+| VIN                    | object         | Vehicle Identification Number           | Original                         |
+| Make                   | object         | Car make abbreviation                   | Original                         |
+| Body_Style             | object         | Body style abbreviation                 | Original                         |
+| Agency                 | float64        | Integer - PDF with corresponding agency | Original                         |
+| Violation_code         | object         |                                         | Original                         |
+| Violation_Description  | object         |                                         | Original                         |
+| Fine_amount            | float64        |                                         | Original                         |
+| Latitude               | float64        |                                         | Original                         |
+| Longitude              | float64        |                                         | Original                         |
+| Agency_Description     | float64        |                                         | Original                         |
+| Color_Description      | float64        |                                         | Original                         |
+| Body_Style_Description | float64        |                                         | Original                         |
 
 
 ## Steps to reproduce
