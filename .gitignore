@@ -129,5 +129,13 @@ dmypy.json
 .pyre/
 /State_Abbreviation.xlsx
 /address_columns.PNG
-/Data_Engineering_Exercise_1 .dbc
 /jag_exercise1.csv
+Cleaned_Parking_Citations.gzip/_common_metadata
+Cleaned_Parking_Citations.gzip/_metadata
+Cleaned_Parking_Citations.gzip/Issue_year=2010/part.0.parquet
+Cleaned_Parking_Citations.gzip/Issue_year=2012/part.0.parquet
+Cleaned_Parking_Citations.gzip/Issue_year=2013/part.0.parquet
+Cleaned_Parking_Citations.gzip/Issue_year=2014/part.0.parquet
+Cleaned_Parking_Citations.gzip/Issue_year=2015/part.0.parquet
+Cleaned_Parking_Citations.gzip/Issue_year=2016/part.0.parquet
+Cleaned_Parking_Citations.gzip/Issue_year=2018/part.0.parquet

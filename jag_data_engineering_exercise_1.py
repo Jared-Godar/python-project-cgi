@@ -36,3 +36,14 @@ df = drop_not_us(df)
 df = address_split(df)
 # Make issue year column out of the datetime object issue date
 df['Issue_year'] = df['Issue_Date'].dt.year
+# Put issue year column next to issue date
+df_columns = [col for col in df.columns if col != 'Issue_year']
+df_columns.insert(3, 'Issue_year')
+df = df[df_columns]
+# Put location  column next to address columns
+df_columns = [col for col in df.columns if col != 'Location']
+df_columns.insert(18, 'Location')
+df = df[df_columns]
+# Write data to parquet file
+df.to_parquet('Cleaned_Parking_Citations.gzip',
+              compression='gzip', partition_cols='Issue_year')
