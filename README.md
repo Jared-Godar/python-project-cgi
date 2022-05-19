@@ -48,7 +48,8 @@ This will import the Databricks archive notebook needed for this exercise into y
 1. Drop `Unnamed:_0.1` column - import artifact.
 2. Change `Ticket_number` data type to string.
 3. Change `Issue_Date` data type to datetime.
-4. 
+4. Drop data with incomplete location data (lat long like 99999 or NA) 
+5. Add `Distance_to_pointA` column with distance in feet to point at (6439997, 1802686).
 
 
 ## Data Dictionary
@@ -74,7 +75,8 @@ This will import the Databricks archive notebook needed for this exercise into y
 | Agency_Description     | float64        |                                         | Original                         |
 | Color_Description      | float64        |                                         | Original                         |
 | Body_Style_Description | float64        |                                         | Original                         |
-
+| Distance_to_pointA     |                | Distance to (6439997, 1802686)          | Engineered                       |
+|                        |
 
 ## Steps to reproduce
 
